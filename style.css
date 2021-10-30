@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+main {
+  background: url(images/background.png) no-repeat center/cover;
+  width: 100vw;
+  min-height: 55.625rem;
+  height: 100vw;
+}
+.avatar {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 50px #0f0, 0 0 100px #0f0, 0 0 150px #0f0, 0 0 200px #0f0,
+    0 0 250px #0f0;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  clip-path: polygon(50% 0%, 100% 22%, 100% 100%, 0 100%, 0 22%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+.github {
+  margin: 0.25rem 0 0 0;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--gray);
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.github:hover {
+  transition: 0.2s;
+  filter: brightness(0.5);
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+.card-mask {
+  opacity: 10;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: -25rem;
+  transform: translate(-8.9rem);
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -9rem;
+  z-index: 0;
+}
+.rectangle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.9rem;
+  width: 22.375rem;
+  height: 33.75rem;
+  background: rgba(46, 49, 49, 0.3);
+  z-index: 0;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body {
+  background: none;
+}
+
+.youtube {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.youtube:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+.youtube :hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+
+.facebook {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+.facebook :hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3b5998;
+}
+
+.instagram {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+.instagram :hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cd486b;
+}
+
+.twitter {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.twitter:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+.twitter :hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1da1f2;
+}
+
+.github {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.github:hover {
+  -webkit-transform: scale(0.5);
+  transform: scale(1.2);
+}
+/*.rectangle {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.rectangle:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+}
+*/
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.selo {
+  animation: gira 10s linear infinite;
+}
